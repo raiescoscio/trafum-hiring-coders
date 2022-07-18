@@ -1,0 +1,37 @@
+{
+    "store.custom#tfdotz": {
+    "blocks": [
+      
+      "responsive-layout.desktop#bannerdesk",
+      "responsive-layout.mobile#bannermob"
+     // "tab-layout#comofunciona"//
+    ]
+  },
+
+  "responsive-layout.desktop#bannerdesk": {
+    "children": [ "image#imgdesktop"]
+  },
+  
+  "responsive-layout.mobile#bannermob": {
+    "children": [ "image#imgmobile"]
+  },
+
+  "image#imgdesktop": {
+    "props": {
+      "src": "/images/Banner-tfdotz-landingpage.jpg",
+      "maxWidth" : "100%",
+      "alt": "programa de pontos trafum"
+    }
+  },
+
+  "image#imgmobile": {
+    "props": {
+      "src": "/images/Banner-tfdotz-landingpage.jpg",
+      "maxWidth" : "100%",
+      "alt": "programa de pontos trafum"
+    }
+  }
+  
+
+
+}

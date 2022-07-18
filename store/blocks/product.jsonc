@@ -1,0 +1,78 @@
+{
+  "store.product": {
+    "children": [
+      "condition-layout.product#retro-mixer", //conditional layout 
+      "breadcrumb", // caminho do site
+      "flex-layout.row#main" // bloco principal do produto
+    ]
+  },
+
+  "condition-layout.product#retro-mixer": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId", //local onde vai procurar p/ comparar
+            "arguments": {
+              "id": "3" // valor utilizado na verificação
+            }
+          }
+        ],
+        "Then": "image#retro-mixer-banner" //Caso positivo exibe o banner definido em image#retro...
+        //"Else":"image#product-banner" :: pode usar esse escape.
+      }
+  },
+
+  "image#retro-mixer-banner": { // imagem/banner p/ o conditional layout 
+    "props": {
+       "src": "https://appliancetheme.vtexassets.com/assets/app/src/retroimage___92a8271aac7c51d2059193bdbe019016.jpg",
+       "width": "100%",
+       "height": "200px",
+       "blockClass": "cover"
+     }
+   },
+
+
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "flex-layout.col#left", // divide o bloco
+      "flex-layout.col#right" 
+    ]
+  },
+  "flex-layout.col#left": { // lado esquerdo para imagens
+    "children": [
+      "product-images"
+    ]
+  },
+  "flex-layout.col#right": { //lado direito para as infos do produto
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [ //sub-divisão da coluna de info
+      "product-name",
+      "product-identifier.product", 
+      "product-price",
+      "flex-layout.row#qty-sku", // pode ter outros blocos filhos
+      "shipping-simulator",
+      "buy-button"
+    ]
+  },
+  
+  "flex-layout.row#qty-sku" :{ //bloco para escolher modelo ou
+    "children" : [             // a quantidade do produto.
+      "sku-selector",
+      "product-quantity"
+    ]
+},
+"product-price" : { // preço do produto com algumas props
+  "props" : {
+    "showSavings": true,
+    "showListPrice": true
+  }
+}
+
+
+}
