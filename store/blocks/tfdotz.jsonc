@@ -2,17 +2,19 @@
     "store.custom#tfdotz": {
     "blocks": [
       
-      "list-context.image-list#demo",
+      "list-context.image-list#bannertfdotz",
       "rich-text#tfdotz",
-     "tab-layout#comofunciona"
+     "tab-layout#comofunciona",
+     "responsive-layout.desktop#desk-tfdotz",
+     "responsive-layout.mobile#mob-tfdotz"
     ]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  "list-context.image-list#bannertfdotz": {
+    "children": ["slider-layout#demo-tfdotz"],
     "props": {
       "fullWidth":true,
-      "height": 490,
+      "height": 460,
       "preload": true,
       "images": [
         {
@@ -23,7 +25,7 @@
     }
   },
 
-  "slider-layout#demo-images": {
+  "slider-layout#demo-tfdotz": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -66,6 +68,7 @@
     "tab-content.item#vantagens",
     "tab-content.item#resgate",
     "tab-content.item#duvidas"
+    
   
     ]
 },
@@ -145,7 +148,7 @@
       "headline": "Chegou o tfdotz!", //titulo
       "subhead": " Continue comprando normalmente em nossa loja.<br>A cada R$1,00 em compras você ganha 1 ponto e vai acumulando na sua conta.<br> A partir daí, basta trocar seus pontos como quiser em nossos parceiros.", // subtítulo
       "textAlignment": "left",
-      "height" : 500,
+      "height" : 400,
       "callToActionMode": "null"
       
   }
@@ -160,7 +163,7 @@
       "headline": "Aí eu vi vantagem!", //titulo
       "subhead": "Com o nosso programa, quanto mais você compra <br>mais pontos acumula e troca por prêmios cada vez mais legais <br>em nossos centenas de parceiros.", // subtítulo
       "textAlignment": "left",
-      "height" : 500,
+      "height" : 400,
       "callToActionMode": "null"
       
   }
@@ -194,7 +197,35 @@
       "callToActionMode": "null"
       
   }
+},
+
+"responsive-layout.desktop#desk-tfdotz": {
+  "children": [ "image#desk-banner"]
+},
+
+"responsive-layout.mobile#mob-tfdotz": {
+  "children": ["image#mob-banner"]
+},
+
+"image#desk-banner": {
+  "props": {
+    "textAlignment" : "CENTER",
+    "src": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz-beneficios.jpg",
+    "maxWidth" : "100%",
+    "alt": "programa de pontos tfdotz"
+  }
+},
+
+"image#mob-banner": {
+  "props": {
+    "src": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz-beneficios.jpg",
+    "maxWidth" : "100%",
+    "height" : 400,
+    "alt": "programa de pontos tfdotz"
+  }
 }
+
+
 
 
 }
