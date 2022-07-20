@@ -4,13 +4,13 @@
       
       
       "rich-text#nomeloja",
-      "slider-layout#home",
       "flex-layout.row",
-      "tab-layout",
+      "rich-text#marcas",
+      "slider-layout#home",
       "stack-layout#cta",
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile",
-      "rich-text#marcas",
+      "rich-text#maisvendidos",
       "list-context.product-list"            
      
     ]
@@ -34,6 +34,15 @@
     }
   },
 
+  "rich-text#maisvendidos": { 
+    "props": { 
+      "text": "### Mais vendidos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2"
+    }
+  },
+
   "responsive-layout.desktop#desktop": {
     "children": ["rich-text#desktop", "image#desktop"]
   },
@@ -44,7 +53,7 @@
   
   "rich-text#desktop": {
     "props": {
-      "text": "## Cafezinho do seu jeito! \n ### Nova coleção de cafeteiras",
+      "text": "#### Seu programa de pontos completo! \n #### O melhor para suas compras",
       "textPosition": "CENTER",
       "textAlignment": "CENTER"
     }
@@ -53,18 +62,18 @@
   "image#desktop": {
     "props": {
       "textAlignment" : "CENTER",
-      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
+      "src": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz.jpg",
       "link": {
-        "url": "/small-appliances/coffee-makers"
+        "url": "/programa-de-pontos"
       } ,
-      "maxWidth" : "100%",
-      "alt": "Coffee Makers Collection"
+      "maxWidth" : "120%",
+      "alt": "programa de pontos tfdotz"
     }
   },
   
   "rich-text#mobile": {
     "props": {
-      "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection (I'm on mobile)",
+      "text": "#### Seu programa de pontos completo! \n #### O melhor para suas compras",
       "textPosition": "CENTER",
       "textAlignment": "CENTER"
     }
@@ -81,42 +90,14 @@
     }
   },
 
-  "info-card#button-right" : {
-    "props" : {
-      
-      "isFullModeStyle": false,
-        "textPosition": "right",
-        "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-        "headline": "Vintage Pink", //titulo
-        "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.", // subtítulo
-        "callToActionMode": "button",
-        "callToActionText": "Compre já",
-        "callToActionUrl": "/programa-de-pontos",
-        "textAlignment": "center",
-        "blockClass": "vintage"
-    }
-    
-  },
-  "info-card#button-left" : {
-    "props" :{
-      "isFullModeStyle": false,
-        "textPosition": "left",
-        "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-        "headline": "Shining Chrome",
-        "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until December 2020.",
-        "callToActionMode": "link",
-        "callToActionText": "Aproveite!",
-        "callToActionUrl": "/sale/d",
-        "textAlignment": "center"
-        
-    }
-  },
-
   "flex-layout.row" : {
     "children": [
       "info-card#rethink",
       "flex-layout.col"
-    ]
+    ],
+    "props" : {
+      "height" : 400
+    }
   },
 
   "flex-layout.col" : {
@@ -128,24 +109,26 @@
 
  "info-card#rethink": {
     "props": {
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
+      "imageUrl": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz-landingpage.jpg",
       "isFullModeStyle": true,
-      "headline": "Hora de repensar sua cozinha",
-      "callToActionText": "Descubra",
+      //"headline": "Hora de ganhar pontos e trocar por prêmios", 
+      "callToActionText": " Saiba Mais ",
+      "callToActionUrl": "/programa-de-pontos",
       "textPosition": "center"
+      //https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz.jpg
     }
   },
 
   "image#eletronics" : {
     "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
+      "src": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-roseta-lacamento.jpg",
       "maxWidth": "100%"
     }
   },
 
   "image#major-appliance" : {
     "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
+      "src": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/lilas.png",
       "maxWidth": "100%"
     }
   },
@@ -229,156 +212,6 @@
       "src" : "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square6.png"
       }
   },
-
-  "tab-layout": { //Cria lista de botões de categorias
-    "children": [
-      "tab-list",
-      "tab-content"
-    ]
-  },
-
-"tab-list" : { // Botões clicáveis
-  "children": [
-    "tab-list.item#1",
-    "tab-list.item#2",
-    "tab-list.item#3",
-    "tab-list.item#4",
-    "tab-list.item#5"
-    ]
-},
-
-"tab-content" : { //Conteúdo dinâmico ao clicar em cada botão
-  "children": [
-    "tab-content.item#1",
-    "tab-content.item#2",
-    "tab-content.item#3",
-    "tab-content.item#4",
-    "tab-content.item#5"
-    ]
-},
-
-"tab-list.item#1" : {
-  "props": {
-    "tabId": "celulares", // ID utilizado para linkar com seu respectivo conteúdo
-    "label": "Celulares", // nome que aparece no botão
-    "defaultActiveTab": true // Botão que fica acionado
-  }
-},
-
-"tab-list.item#2" : {
-  "props": {
-    "tabId": "eletronics",
-    "label": "Eletrônicos"
-  }
-},
-
-"tab-list.item#3" : {
-  "props": {
-    "tabId": "cozinhasmodernas",
-    "label": "Cozinhas modernas"
-  
-  }
-},
-
-"tab-list.item#4" : {
-  "props": {
-    "tabId": "cozinhasclassicas",
-    "label": "Cozinhas clássicas"
-  }
-},
-
-"tab-list.item#5" : {
-  "props": {
-    "tabId": "decoracao",
-    "label": "Decoração"
-  }
-},
-
-"tab-content.item#1": {
-  "children": [
-    "rich-text#1"
-  ],
-  "props": {
-    "tabId": "celulares"
-  }
-},
-
-"tab-content.item#2": {
-  "children": [
-    "rich-text#2"
-  ],
-  "props": {
-    "tabId": "eletronics"
-  }
-},
-
-"tab-content.item#3": {
-  "children": [
-    "rich-text#3", 
-    "info-card#button-left"
-  ],
-  "props": {
-    "tabId": "cozinhasmodernas"
-  }
-},
-
-"tab-content.item#4": {
-  "children": [
-    "rich-text#4", "info-card#button-right"
-  ],
-  "props": {
-    "tabId": "cozinhasclassicas"
-  }
-},
-
-"tab-content.item#5": {
-  "children": [
-    "rich-text#5"
-  ],
-  "props": {
-    "tabId": "decoracao"
-  }
-},
-
-"rich-text#1": {
-  "props": {
-    "text": "## Texto para Celulares",
-    "textPosition": "CENTER",
-    "font": "t-heading-3"
-  }
-},
-
-"rich-text#2": {
-  "props": {
-    "text": "Texto para Electrônicos",
-    "textPosition": "CENTER",
-    "font": "t-heading-3"
-  }
-},
-
-"rich-text#3": {
-  "props": {
-    "text": "## Texto para cozinhas modernas",
-    "textPosition": "CENTER",
-    "font": "t-heading-3"
-  }
-},
-
-"rich-text#4": {
-  "props": {
-    "text": "## Texto para cozinhas clássicas",
-    "textPosition": "CENTER",
-    "font": "t-heading-3"
-  }
-},
-
-"rich-text#5": {
-      "props": {
-        "text": "## Texto para Itens de decoração",
-        "textPosition": "CENTER",
-        "font": "t-heading-3"
-      }
-},
 
 "list-context.product-list": { // cria lista de produtos em slide
 

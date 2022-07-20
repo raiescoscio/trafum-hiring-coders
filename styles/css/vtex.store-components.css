@@ -8,28 +8,24 @@
 }
 
   .infoCardHeadline {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.25rem;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.15rem;
   font-weight: normal;
-  color: rgb(7, 95, 26);
+  color: rgb(46, 171, 73);
   border: 2px solid rgb(2, 60, 26);
+  border-radius: 25px;
   padding: 24px;
 }
 
-.infoCardCallActionContainer :global(.vtex-button) {
-  color: rgb(255, 255, 255);
-  background-color: rgb(3, 82, 44);
-  border: transparent;
+.infoCardSubhead {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.40rem;
+  font-weight: normal;
 }
 
-.infoCardCallActionContainer :global(.vtex-button):hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(5, 62, 29);
-  border: transparent;
-}
-
-.infoCardContainer--vintage {
-  background-color: #46f79f;
+.infoCardCallActionText {
+  font-size: 2.25rem;
+  font-weight: normal;
 }
 
 .infoCardContainer {

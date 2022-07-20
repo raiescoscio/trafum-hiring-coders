@@ -68,6 +68,132 @@
     "tab-content.item#duvidas"
   
     ]
+},
+
+"tab-list.item#comoganhar" : {
+  "props": {
+    "tabId": "comoganhar", // ID utilizado para linkar com seu respectivo conteúdo
+    "label": "Como ganhar", // nome que aparece no botão
+    "defaultActiveTab": true // Botão que fica acionado
+  }
+},
+
+"tab-list.item#vantagens" : {
+  "props": {
+    "tabId": "vantagens",  // pode usar nome diferente nas props, desde q seja o mesmo em 'content.item'
+    "label": "Vantagens"
+  }
+},
+
+"tab-list.item#resgate" : {
+  "props": {
+    "tabId": "resgate",
+    "label": "Resgate"
+  
+  }
+},
+
+"tab-list.item#duvidas" : {
+  "props": {
+    "tabId": "duvidas",
+    "label": "Dúvidas"
+  }
+},
+
+"tab-content.item#comoganhar": {
+  "children": [
+    "info-card#comoganhar"
+  ],
+  "props": {
+    "tabId": "comoganhar"
+  }
+},
+
+"tab-content.item#vantagens": {
+  "children": [
+    "info-card#vantagens"
+  ],
+  "props": {
+    "tabId": "vantagens"
+  }
+},
+
+"tab-content.item#resgate": {
+  "children": [ 
+    "info-card#resgate"
+  ],
+  "props": {
+    "tabId": "resgate"
+  }
+},
+
+"tab-content.item#duvidas": {
+  "children": [
+     "info-card#duvidas"
+  ],
+  "props": {
+    "tabId": "duvidas"
+  }
+},
+
+"info-card#comoganhar" : {
+  "props" : {
+    
+    "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/como-ganhar.png",
+      "headline": "Chegou o tfdotz!", //titulo
+      "subhead": " Continue comprando normalmente em nossa loja.<br>A cada R$1,00 em compras você ganha 1 ponto e vai acumulando na sua conta.<br> A partir daí, basta trocar seus pontos como quiser em nossos parceiros.", // subtítulo
+      "textAlignment": "left",
+      "height" : 500,
+      "callToActionMode": "null"
+      
+  }
+},
+
+"info-card#vantagens" : {
+  "props" : {
+    
+    "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/vantagens.png",
+      "headline": "Aí eu vi vantagem!", //titulo
+      "subhead": "Com o nosso programa, quanto mais você compra <br>mais pontos acumula e troca por prêmios cada vez mais legais <br>em nossos centenas de parceiros.", // subtítulo
+      "textAlignment": "left",
+      "height" : 500,
+      "callToActionMode": "null"
+      
+  }
+},
+
+"info-card#resgate" : {
+  "props" : {
+    
+    "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/resgate.png",
+      "headline": "Como troco meus pontos?", //titulo
+      "subhead": " Quando atingir pelo menos 100 pts você já <br>pode trocar por produtos ou experiências em <br> um dos nossos parceiros, em um ambiente totalmente seguro.", // subtítulo
+      "textAlignment": "left",
+      "height" : 500,
+      "callToActionMode": "null"
+      
+  }
+},
+
+"info-card#duvidas" : {
+  "props" : {
+    
+    "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/duvidas.png",
+      "headline": "Tem alguma dúvida?", //titulo
+      "subhead": " Lembre-se: Desenvolvemos esse programa pensando.<br>totalmente em você para que tenha a melhor experiência em nossa loja. <br> Mas caso tenha alguma dúvida, nos envie um email:<br> trafum@travellog.com", // subtítulo
+      "textAlignment": "left",
+      "height" : 400,
+      "callToActionMode": "null"
+      
+  }
 }
 
 
