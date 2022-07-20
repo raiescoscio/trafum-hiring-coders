@@ -2,29 +2,34 @@
     object-fit: cover;
   }
 
+.vtex-store-components-3-x-imageElement {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
   .infoCardHeadline {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.25rem;
   font-weight: normal;
-  color: gray;
-  border: 2px solid rgb(180, 179, 179);
+  color: rgb(7, 95, 26);
+  border: 2px solid rgb(2, 60, 26);
   padding: 24px;
 }
 
 .infoCardCallActionContainer :global(.vtex-button) {
-  color: white;
-  background-color: rgb(8, 5, 63);
+  color: rgb(255, 255, 255);
+  background-color: rgb(3, 82, 44);
   border: transparent;
 }
 
 .infoCardCallActionContainer :global(.vtex-button):hover {
-  color: rgb(8, 5, 63);
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(5, 62, 29);
   border: transparent;
 }
 
 .infoCardContainer--vintage {
-  background-color: #edcfd1;
+  background-color: #46f79f;
 }
 
 .infoCardContainer {

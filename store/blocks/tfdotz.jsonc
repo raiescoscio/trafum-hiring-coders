@@ -2,36 +2,73 @@
     "store.custom#tfdotz": {
     "blocks": [
       
-      "responsive-layout.desktop#bannerdesk",
-      "responsive-layout.mobile#bannermob"
-     // "tab-layout#comofunciona"//
+      "list-context.image-list#demo",
+      "rich-text#tfdotz",
+     "tab-layout#comofunciona"
     ]
   },
 
-  "responsive-layout.desktop#bannerdesk": {
-    "children": [ "image#imgdesktop"]
-  },
-  
-  "responsive-layout.mobile#bannermob": {
-    "children": [ "image#imgmobile"]
-  },
-
-  "image#imgdesktop": {
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
     "props": {
-      "src": "/images/Banner-tfdotz-landingpage.jpg",
-      "maxWidth" : "100%",
-      "alt": "programa de pontos trafum"
+      "fullWidth":true,
+      "height": 490,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz-landingpage.jpg",
+          "mobileImage": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz-landingpage.jpg"
+        }
+]
     }
   },
 
-  "image#imgmobile": {
+  "slider-layout#demo-images": {
     "props": {
-      "src": "/images/Banner-tfdotz-landingpage.jpg",
-      "maxWidth" : "100%",
-      "alt": "programa de pontos trafum"
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
     }
-  }
+  },
+
+  "rich-text#tfdotz" : {
+    "props": {
+      "text": "### Ainda mais motivos para comprar conosco:",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "tab-layout#comofunciona": { //Cria lista de botões
+    "children": [
+      "tab-list",
+      "tab-content"
+    ]
+  },
+
+  "tab-list" : { // Botões clicáveis
+  "children": [
+    "tab-list.item#comoganhar",
+    "tab-list.item#vantagens",
+    "tab-list.item#resgate",
+    "tab-list.item#duvidas"
+    ]
+},
+
+"tab-content" : { //Conteúdo dinâmico ao clicar em cada botão
+  "children": [
+    "tab-content.item#comoganhar",
+    "tab-content.item#vantagens",
+    "tab-content.item#resgate",
+    "tab-content.item#duvidas"
   
+    ]
+}
 
 
 }

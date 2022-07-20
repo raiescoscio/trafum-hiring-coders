@@ -221,32 +221,32 @@
       "muted-5": "#f2f4f5"
     },
     "on": {
-      "base": "#e68e94",
+      "base": "#000000",
       "base--inverted": "#ffffff",
       "action-primary": "#ffffff",
       "action-secondary": "#0F3E99",
       "emphasis": "#ffffff",
       "disabled": "#979899",
       "success": "#ffffff",
-      "success--faded": "#e68e94",
+      "success--faded": "#000000",
       "danger": "#ffffff",
-      "danger--faded": "#e68e94",
+      "danger--faded": "#000000",
       "warning": "#ffffff",
       "warning--faded": "#1a1a1a",
       "muted-1": "#ffffff",
       "muted-2": "#ffffff",
-      "muted-3": "#e68e94",
-      "muted-4": "#e68e94",
-      "muted-5": "#e68e94"
+      "muted-3": "#000000",
+      "muted-4": "#000000",
+      "muted-5": "#000000"
     },
     "hover-on": {
       "action-primary": "#ffffff",
       "action-secondary": "#0F3E99",
       "emphasis": "#ffffff",
       "success": "#ffffff",
-      "success--faded": "#e68e94",
+      "success--faded": "#000000",
       "danger": "#ffffff",
-      "danger--faded": "#e68e94",
+      "danger--faded": "#000000",
       "warning": "#ffffff",
       "warning--faded": "#1a1a1a"
     },
@@ -255,9 +255,9 @@
       "action-secondary": "#0F3E99",
       "emphasis": "#ffffff",
       "success": "#ffffff",
-      "success--faded": "#e68e94",
+      "success--faded": "#000000",
       "danger": "#ffffff",
-      "danger--faded": "#e68e94",
+      "danger--faded": "#000000",
       "warning": "#ffffff",
       "warning--faded": "#1a1a1a"
     }
@@ -324,7 +324,7 @@
     ],
     "styles": {
       "heading-1": {
-        "fontFamily": "Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+        "fontFamily": "helvetica neue, helvetica, sans-serif",
         "fontWeight": "700",
         "fontSize": "2,5rem",
         "textTransform": "initial",

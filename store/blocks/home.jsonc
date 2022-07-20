@@ -2,14 +2,15 @@
   "store.home": { 
     "blocks": [
       
+      
       "rich-text#nomeloja",
+      "slider-layout#home",
       "flex-layout.row",
       "tab-layout",
       "stack-layout#cta",
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile",
       "rich-text#marcas",
-      "slider-layout#home",
       "list-context.product-list"            
      
     ]
@@ -17,7 +18,7 @@
 
   "rich-text#nomeloja" : {
     "props": { 
-      "text": "Labelle Novidades",
+      "text": "Trafum",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
       "font": "t-heading-1"
@@ -90,10 +91,11 @@
         "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.", // subtítulo
         "callToActionMode": "button",
         "callToActionText": "Compre já",
-        "callToActionUrl": "/sale/d",
+        "callToActionUrl": "/programa-de-pontos",
         "textAlignment": "center",
         "blockClass": "vintage"
     }
+    
   },
   "info-card#button-left" : {
     "props" :{
